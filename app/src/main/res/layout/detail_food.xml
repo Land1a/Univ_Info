@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout style="@style/Theme.AppCompat"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/food_det"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:background="#dddddd"
+    android:orientation="horizontal"
+    android:rowCount="5"
+    android:columnCount="5">
+
+        <LinearLayout
+            android:layout_width="216dp"
+            android:layout_height="150dp"
+            android:layout_columnSpan="3"
+            android:layout_rowSpan="4"
+            android:layout_margin="5dp">
+            <ImageView
+                android:id="@+id/Restaurant_image"
+                android:src="@drawable/error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Restaurant_name"
+            android:text="가게 이름"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_width="140dp"
+            android:layout_columnSpan="2"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/Restaurant_type"
+            android:text="가게 종류"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="1"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/Restaurant_detail"
+            android:text="가게 설명"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="1"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/foodDetailBtn"
+            android:text="자세히보기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="4"
+            android:layout_rowSpan="5"
+            android:layout_margin="5dp"
+            android:background="#79CF9F"/>
+
+
+
+</GridLayout>
